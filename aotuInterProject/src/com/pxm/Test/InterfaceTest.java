@@ -3,7 +3,6 @@ package com.pxm.Test;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.pxm.Login.FormDataMethod;
