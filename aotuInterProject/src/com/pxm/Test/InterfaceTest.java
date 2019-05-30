@@ -33,7 +33,7 @@ public class InterfaceTest {
    
     	String requestUrl = "https://service.magicdapps.com/api/auth/login/login";
 	    Map<String, String> paramsMap = new HashMap<String, String>();
-	    paramsMap.put("mobile", "186016321891");
+	    paramsMap.put("mobile", "18601632188");
 	    paramsMap.put("password", "dc483e80a7a0bd9ef71d8cf973673924");
 	    paramsMap.put("type", "1");
 	    paramsMap.put("code", "");
@@ -42,6 +42,7 @@ public class InterfaceTest {
 	    System.out.println(resultData);
 	    Assert.assertEquals("\"status\":1", resultData.substring(1, 11));
 	   
+	    
     }
     
     @Test(groups = { "BaseCase"})
@@ -50,7 +51,7 @@ public class InterfaceTest {
     	String requestUrl = "https://service.magicdapps.com/api/auth/login/login";
 	    Map<String, String> paramsMap = new HashMap<String, String>();
 	    paramsMap.put("mobile", "18601632189");
-	    paramsMap.put("password", "1dc483e80a7a0bd9ef71d8cf973673924");
+	    paramsMap.put("password", "");
 	    paramsMap.put("type", "1");
 	    paramsMap.put("code", "");
 	    // 发送post请求并接收返回结果
@@ -85,7 +86,6 @@ public class InterfaceTest {
 	    String paramsMap = "";
     	String resultData = FormDataMethod.httpGetWithForm(requestUrl, paramsMap);
     	System.out.println(resultData);
-    	Assert.assertEquals("\"status\":0", resultData.substring(1, 11));
-        
+    	Assert.assertEquals("\"status\":0", resultData.substring(1, 11)); 
     }
 }

@@ -66,6 +66,7 @@ public class FormDataMethod {
 	 * @param url
 	 * @param paramsMap
 	 * @return resultData
+	 * form data 发送get请求
 	 * 
 	 */
 	public static String httpGetWithForm(String url,String paramsMap){
