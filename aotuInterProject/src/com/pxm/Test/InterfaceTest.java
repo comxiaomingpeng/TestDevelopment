@@ -23,10 +23,6 @@ public class InterfaceTest {
 	    String resultData = FormDataMethod.httpPostWithForm(requestUrl, paramsMap);
 	    System.out.println("返回结果："+resultData);
         
-     
-        //type=1;
-        //userName="18601632189";
-        //Pwd="dc483e80a7a0bd9ef71d8cf973673924";
        /* String Info="type"+"="+"1"+"&"+"mobile"+"="+"18601632189"+"&"+"password"+"="+"dc483e80a7a0bd9ef71d8cf973673924";
         Reporter.log(URLConnection.GetResponse(Info));
         Reporter.log(Info);*/
