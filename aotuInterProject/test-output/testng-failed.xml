@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pxm.Test.LoginTest">
+      <class name="com.pxm.Test.InterfaceTest">
         <methods>
-          <include name="Login_succ"/>
-          <include name="pwd_fail"/>
-          <include name="username_fail"/>
+          <include name="password_fail"/>
+          <include name="mobile_fail"/>
         </methods>
-      </class> <!-- com.pxm.Test.LoginTest -->
+      </class> <!-- com.pxm.Test.InterfaceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

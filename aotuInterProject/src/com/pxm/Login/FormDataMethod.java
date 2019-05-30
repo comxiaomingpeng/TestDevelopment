@@ -61,6 +61,13 @@ public class FormDataMethod {
 	     return resultData;
 	}
 	
+	/**
+	 * 
+	 * @param url
+	 * @param paramsMap
+	 * @return resultData
+	 * 
+	 */
 	public static String httpGetWithForm(String url,String paramsMap){
 	    // 用于接收返回的结果
 	    String resultData ="";

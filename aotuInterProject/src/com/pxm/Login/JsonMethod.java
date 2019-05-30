@@ -19,8 +19,8 @@ import net.sf.json.JSONObject;
  */
 public class JsonMethod {  
     
-    public static void appadd(String UrlName,String method) {
-
+    public static StringBuffer appadd(String UrlName,String method) {
+    	StringBuffer sb = new StringBuffer();
         try {
             //创建连接
             URL url = new URL(UrlName);
@@ -44,7 +44,7 @@ public class JsonMethod {
             obj.accumulate("type", "1");*/
             
             out.writeBytes(obj.toString());
-            System.out.println("Json请求参数：" + obj.toString());
+            //System.out.println("Json请求参数：" + obj.toString());
             out.flush();
             out.close();
 
@@ -52,12 +52,11 @@ public class JsonMethod {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     connection.getInputStream()));
             String lines;
-            StringBuffer sb = new StringBuffer("");
+            
             while ((lines = reader.readLine()) != null) {
                 lines = new String(lines.getBytes(), "utf-8");
                 sb.append(lines);
             }
-            System.out.println("json返回结果："+sb);
             reader.close();
             // 断开连接
             connection.disconnect();
@@ -71,6 +70,7 @@ public class JsonMethod {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+		return sb;
 
     }
 }
