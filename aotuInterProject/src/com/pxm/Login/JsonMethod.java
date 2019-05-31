@@ -20,7 +20,7 @@ import net.sf.json.JSONObject;
  */
 public class JsonMethod {  
     
-    public static StringBuffer appadd(String UrlName,String method,Map<String, String> paramsMap) {
+    public static StringBuffer appadd(String UrlName,String method,JSONObject json,String token) {
     	StringBuffer sb = new StringBuffer();
         try {
             //创建连接
@@ -34,19 +34,13 @@ public class JsonMethod {
             connection.setInstanceFollowRedirects(true);
             connection.setRequestProperty("Content-Type",
                     "application/json");
-            
+            connection.setRequestProperty("Authorization", token);
             connection.connect();
 
             //POST请求
             DataOutputStream out = new DataOutputStream(
                     connection.getOutputStream());
-            JSONObject obj = new JSONObject();
-            if(!paramsMap.isEmpty()) {
-            	obj.accumulate("mobile", "18601632189");
-            	obj.accumulate("password", "dc483e80a7a0bd9ef71d8cf973673924");
-            	obj.accumulate("type", "1");
-            }
-            out.writeBytes(obj.toString());
+            out.writeBytes(json.toString());
             //System.out.println("Json请求参数：" + obj.toString());
             out.flush();
             out.close();
@@ -64,13 +58,10 @@ public class JsonMethod {
             // 断开连接
             connection.disconnect();
         } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 		return sb;

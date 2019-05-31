@@ -5,8 +5,7 @@
     <classes>
       <class name="com.pxm.Test.InterfaceTest">
         <methods>
-          <include name="password_fail"/>
-          <include name="mobile_fail"/>
+          <include name="promotion"/>
         </methods>
       </class> <!-- com.pxm.Test.InterfaceTest -->
     </classes>
