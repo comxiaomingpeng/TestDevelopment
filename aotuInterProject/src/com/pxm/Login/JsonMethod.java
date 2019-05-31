@@ -8,6 +8,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Map;
 
 import net.sf.json.JSONObject;
 
@@ -19,7 +20,7 @@ import net.sf.json.JSONObject;
  */
 public class JsonMethod {  
     
-    public static StringBuffer appadd(String UrlName,String method) {
+    public static StringBuffer appadd(String UrlName,String method,Map<String, String> paramsMap) {
     	StringBuffer sb = new StringBuffer();
         try {
             //创建连接
@@ -33,16 +34,18 @@ public class JsonMethod {
             connection.setInstanceFollowRedirects(true);
             connection.setRequestProperty("Content-Type",
                     "application/json");
+            
             connection.connect();
 
             //POST请求
             DataOutputStream out = new DataOutputStream(
                     connection.getOutputStream());
             JSONObject obj = new JSONObject();
-           /* obj.accumulate("mobile", "18601632189");
-            obj.accumulate("password", "dc483e80a7a0bd9ef71d8cf973673924");
-            obj.accumulate("type", "1");*/
-            
+            if(!paramsMap.isEmpty()) {
+            	obj.accumulate("mobile", "18601632189");
+            	obj.accumulate("password", "dc483e80a7a0bd9ef71d8cf973673924");
+            	obj.accumulate("type", "1");
+            }
             out.writeBytes(obj.toString());
             //System.out.println("Json请求参数：" + obj.toString());
             out.flush();
@@ -71,6 +74,5 @@ public class JsonMethod {
             e.printStackTrace();
         }
 		return sb;
-
     }
 }

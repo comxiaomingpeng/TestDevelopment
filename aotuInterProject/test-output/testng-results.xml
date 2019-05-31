@@ -5,7 +5,7 @@
       <![CDATA[{"status":0,"message":"","data":[{"name":"BTC","price":60794.127},{"name":"ETH","price":1979.0787},{"name":"DUT","price":0.19790787}],"suc":true}]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="898" started-at="2019-05-30T08:09:21Z" finished-at="2019-05-30T08:09:22Z">
+  <suite name="Default suite" duration-ms="1039" started-at="2019-05-30T08:54:12Z" finished-at="2019-05-30T08:54:13Z">
     <groups>
       <group name="BaseCase">
         <method signature="InterfaceTest.Login_succ()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="Login_succ" class="com.pxm.Test.InterfaceTest"/>
@@ -16,32 +16,32 @@
         <method signature="InterfaceTest.password_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="password_fail" class="com.pxm.Test.InterfaceTest"/>
       </group> <!-- BaseCase -->
     </groups>
-    <test name="Default test" duration-ms="898" started-at="2019-05-30T08:09:21Z" finished-at="2019-05-30T08:09:22Z">
+    <test name="Default test" duration-ms="1039" started-at="2019-05-30T08:54:12Z" finished-at="2019-05-30T08:54:13Z">
       <class name="com.pxm.Test.InterfaceTest">
-        <test-method status="PASS" signature="Login_succ()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="Login_succ" duration-ms="654" started-at="2019-05-30T08:09:21Z" finished-at="2019-05-30T08:09:22Z">
+        <test-method status="PASS" signature="Login_succ()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="Login_succ" duration-ms="709" started-at="2019-05-30T08:54:12Z" finished-at="2019-05-30T08:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_succ -->
-        <test-method status="PASS" signature="currency_price()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="currency_price" duration-ms="74" started-at="2019-05-30T08:09:22Z" finished-at="2019-05-30T08:09:22Z">
+        <test-method status="PASS" signature="currency_price()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="currency_price" duration-ms="88" started-at="2019-05-30T08:54:13Z" finished-at="2019-05-30T08:54:13Z">
           <reporter-output>
             <line>
               <![CDATA[{"status":0,"message":"","data":[{"name":"BTC","price":60794.127},{"name":"ETH","price":1979.0787},{"name":"DUT","price":0.19790787}],"suc":true}]]>
             </line>
           </reporter-output>
         </test-method> <!-- currency_price -->
-        <test-method status="PASS" signature="login_out()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="login_out" duration-ms="28" started-at="2019-05-30T08:09:22Z" finished-at="2019-05-30T08:09:22Z">
+        <test-method status="PASS" signature="login_out()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="login_out" duration-ms="34" started-at="2019-05-30T08:54:13Z" finished-at="2019-05-30T08:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_out -->
-        <test-method status="PASS" signature="loginout_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="loginout_fail" duration-ms="23" started-at="2019-05-30T08:09:22Z" finished-at="2019-05-30T08:09:22Z">
+        <test-method status="PASS" signature="loginout_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="loginout_fail" duration-ms="23" started-at="2019-05-30T08:54:13Z" finished-at="2019-05-30T08:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginout_fail -->
-        <test-method status="PASS" signature="mobile_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="mobile_fail" duration-ms="62" started-at="2019-05-30T08:09:22Z" finished-at="2019-05-30T08:09:22Z">
+        <test-method status="PASS" signature="mobile_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="mobile_fail" duration-ms="51" started-at="2019-05-30T08:54:13Z" finished-at="2019-05-30T08:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobile_fail -->
-        <test-method status="PASS" signature="password_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="password_fail" duration-ms="30" started-at="2019-05-30T08:09:22Z" finished-at="2019-05-30T08:09:22Z">
+        <test-method status="PASS" signature="password_fail()[pri:0, instance:com.pxm.Test.InterfaceTest@482f8f11]" name="password_fail" duration-ms="104" started-at="2019-05-30T08:54:13Z" finished-at="2019-05-30T08:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- password_fail -->

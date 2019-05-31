@@ -65,7 +65,11 @@ public class InterfaceTest {
     public void currency_price() throws IOException{
     	String ADD_URL ="https://service.magicdapps.com/api/openApi/currencyPrice";
     	String method = "POST";
-    	String resultData = new String(JsonMethod.appadd(ADD_URL,method));
+    	Map<String, String> paramsMap = new HashMap<String, String>();
+    	paramsMap.put("activityId", "0");
+    	paramsMap.put("activityId", "0");
+    	paramsMap.put("activityId", "0");
+    	String resultData = new String(JsonMethod.appadd(ADD_URL,method,paramsMap));
     	Assert.assertEquals("\"status\":0", resultData.substring(1, 11));
     	Reporter.log(resultData);
     }
