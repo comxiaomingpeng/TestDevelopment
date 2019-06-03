@@ -8,8 +8,8 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.pxm.Login.FormDataMethod;
-import com.pxm.Login.JsonMethod;
+import com.pxm.method.FormDataMethod;
+import com.pxm.method.JsonMethod;
 
 import net.sf.json.JSONObject;
 

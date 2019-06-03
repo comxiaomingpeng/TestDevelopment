@@ -1,4 +1,4 @@
-package com.pxm.Login;
+package com.pxm.method;
 
 import java.io.BufferedReader;
 import java.io.IOException;
